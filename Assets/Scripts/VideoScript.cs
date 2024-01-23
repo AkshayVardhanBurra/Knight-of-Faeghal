@@ -7,7 +7,7 @@ using UnityEngine.Video;
 public class VideoScript : MonoBehaviour
 {
     VideoPlayer video;
-
+    /*
     // Play cutscene
     void Awake()
     {
@@ -18,6 +18,11 @@ public class VideoScript : MonoBehaviour
 
     // Move to next scene when cutscene finishes
     void CheckOver(UnityEngine.Video.VideoPlayer vp)
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    */
+    private void Start()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
